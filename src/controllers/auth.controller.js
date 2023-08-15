@@ -21,9 +21,9 @@ export const signup = async (req, res, next) => {
       number: result.number,
       document: result.document,
       roles: roleUser._id,
-      exam: {
-        url: "",
-      },
+      // exam: {
+      //   url: "",
+      // },
     });
 
     user.password = await user.generateHash(user.password);
